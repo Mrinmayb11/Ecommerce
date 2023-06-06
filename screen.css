@@ -40,10 +40,6 @@
     }
     
         /* ---------- Heading-main --------- */
-
-    .heading-text h1{
-        font-size: 1.6rem;
-    }
     #tshirt{
         position: absolute;
         opacity: 0.4;
@@ -73,7 +69,7 @@
 
 
     .feature-img{
-        width: 200px;
+        width: 100%;
     }
     span{
         font-size: 1rem;
@@ -85,6 +81,11 @@
     .Contact-wrapper>div{
         flex-direction: column;
         gap: 0;
+    }
+    /* Special Section */
+    .special-wrapper{
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -98,7 +99,7 @@
     }
 
     .feature-img{
-        width: 140px;
+        width: 100%;
     }
     span{
         font-size: 1rem;
@@ -114,6 +115,9 @@
       .Custom-img-wrapper{
         gap:5px;
       }
+      .features-wrapper{
+        flex-direction: column;
+    } 
 }
 
 @media (max-width:678px) {
@@ -133,10 +137,23 @@
 
     .features-wrapper{
         flex-direction: column;
+    } 
+
+    /* Special Section */
+
+    .special-img{
+        width: 250px;
+        height: 300px;
     }
-
-
-
+    .special-wrapper h1{
+        font-size: 2rem;
+    }
+    .special-wrapper span{
+        font-size: 1.2rem;
+    }
+    .feature-price{
+        text-align: center;
+    }
 
     .para-text-2{
         flex-direction: column;
@@ -151,7 +168,9 @@
 
        /* ---------- Feature-Section --------- */
 
-
+       .heading-text h1{
+        font-size: 1.8rem;
+    }
        .feature-img-2 {
         width:100%;
       }
@@ -169,5 +188,15 @@
     .second-wrapper{
         width: 90%;
     }
+    form{
+        padding: 2rem;
+    }
+    dialog{
+        width: 80%;
+    }
+    .btn-wrapper{
+        padding: 15px 0;
+    }
 }
+
 
