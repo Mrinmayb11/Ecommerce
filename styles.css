@@ -44,9 +44,6 @@ li{
 .h2-text{
     padding: var(--h2-padding) 0;
 }
-body{
-    /* overflow-x: hidden; */
-}
 h2,p,span{
     letter-spacing: 1px;
 }
@@ -65,13 +62,11 @@ header{
 
 /* ---------- Pop-Up ----------- */
 #d{
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     border: none;
-    position: relative;
-
 }
 dialog[open] {
     animation: myFadeIn 0.2s ease normal;
@@ -137,9 +132,6 @@ form input, form button, form div{
     padding: 0 14vw;
     width: 100%;
     justify-content: space-between;
-}
-.nav-2 button{
-    color: ;
 }
 .nav-icon{
     font-size: 1.4rem;
@@ -347,12 +339,15 @@ li button{
     height: 100%;
     object-fit: cover;
 }
+.for-mobile{
+    display: none;
+}
 .black-overlay:hover .overlay-btns{
     display: flex;
 }
 .feature-img-wrapper{
-    width: 250px;
-    aspect-ratio: 9/12;
+    /* width: 250px; */
+    /* height:379px; */
     border-bottom: 1px solid black;
     position: relative;
 }
@@ -365,8 +360,11 @@ li button{
     border: 1px solid black;
 }
 .features-wrapper{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     gap: 1rem;
-    padding-bottom: 2rem;
+    padding: 0 9rem 1rem 9rem;
 }
 
 @keyframes animate {

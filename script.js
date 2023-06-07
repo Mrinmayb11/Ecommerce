@@ -18,3 +18,25 @@ Bars.addEventListener("click",()=>{
 
 // })
 
+if (window.innerWidth <= 900) {
+    const button = Array.from(document.querySelectorAll('.black-overlay'));
+  
+    button.forEach(btn => {
+      btn.addEventListener('touchstart', (btnp) => {
+        const children = btnp.target.children[0];
+        if (children.style.display === "none") {
+          children.style.display = "flex";
+          console.log("hello, it's working");
+        } else {
+          children.style.display = "none";
+        }
+      });
+    });
+  }
+  
+  
+    
+
+  
+
+
